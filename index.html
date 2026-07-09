@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cone Media — Websites, Hosting & Ongoing Updates</title>
+    <meta name="description" content="Cone Media builds, hosts, and maintains professional websites for small businesses. One point of contact, zero tech headaches.">
+    <link rel="icon" type="image/png" href="logoNoWords.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <noscript>
+        <style>
+            .entrance { display: none; }
+            .nav { transform: translateY(0); }
+            .reveal { opacity: 1; transform: none; }
+        </style>
+    </noscript>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- ============ ENTRANCE OVERLAY ============ -->
+    <div class="entrance" id="entrance" aria-hidden="true">
+        <div class="entrance__stage">
+            <img src="logoNoWords.png" alt="" class="entrance__cone">
+        </div>
+        <div class="entrance__wordmark">
+            <span class="wm-white">Cone</span>&nbsp;<span class="wm-gradient">Media</span>
+        </div>
+        <div class="entrance__tagline">Websites &bull; Hosting &bull; Ongoing Updates</div>
+    </div>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="nav">
+        <div class="container nav__inner">
+            <a href="#top" class="nav__brand">
+                <img src="logoNoWords.png" alt="Cone Media" class="nav__icon">
+                <span class="nav__wordmark"><span class="wm-white">Cone</span>&nbsp;<span class="wm-gradient">Media</span></span>
+            </a>
+            <nav class="nav__links" id="navLinks">
+                <a href="#services">What we do</a>
+                <a href="#process">How it works</a>
+                <a href="#why">Why us</a>
+                <a href="#founder">About</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="nav__cta">Start your project</a>
+            </nav>
+            <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+        <div class="hero__aurora" aria-hidden="true"></div>
+        <div class="container hero__grid">
+            <div class="hero__copy">
+                <p class="eyebrow reveal">&lt;/&gt; Small-business web studio</p>
+                <h1 class="hero__title reveal">
+                    Your business deserves a website that
+                    <span class="gradient-flow">actually works for you.</span>
+                </h1>
+                <p class="hero__sub reveal">
+                    We design it, build it, host it, and keep it updated — so you never have
+                    to touch a line of code or chase a hosting company. You run your business.
+                    We run your website.
+                </p>
+                <div class="hero__actions reveal">
+                    <a href="#contact" class="btn btn--primary">Start your project</a>
+                    <a href="#process" class="btn btn--ghost">See how it works</a>
+                </div>
+                <div class="hero__trust reveal">
+                    <span class="trust-dot"></span> Replies within 24 hours &nbsp;&middot;&nbsp; No jargon, ever
+                </div>
+            </div>
+            <div class="hero__visual" aria-hidden="true">
+                <div class="orbit orbit--outer"></div>
+                <div class="orbit orbit--inner"></div>
+                <img src="logoNoWords.png" alt="" class="hero__cone">
+                <div class="chip chip--1"><span class="chip__dot chip__dot--cyan"></span>Site live</div>
+                <div class="chip chip--2"><span class="chip__dot chip__dot--violet"></span>Hosting: healthy</div>
+                <div class="chip chip--3"><span class="chip__dot chip__dot--magenta"></span>Update shipped</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+            <span>Websites</span><i>&#9670;</i><span>Hosting</span><i>&#9670;</i><span>Ongoing Updates</span><i>&#9670;</i><span>Mobile-friendly</span><i>&#9670;</i><span>Fast load times</span><i>&#9670;</i><span>One point of contact</span><i>&#9670;</i>
+            <span>Websites</span><i>&#9670;</i><span>Hosting</span><i>&#9670;</i><span>Ongoing Updates</span><i>&#9670;</i><span>Mobile-friendly</span><i>&#9670;</i><span>Fast load times</span><i>&#9670;</i><span>One point of contact</span><i>&#9670;</i>
+        </div>
+    </div>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+        <div class="container">
+            <p class="eyebrow reveal">&lt;/&gt; What we do</p>
+            <h2 class="section__title reveal">Everything your website needs.<br>Nothing you have to manage.</h2>
+            <div class="cards">
+                <article class="card reveal">
+                    <div class="card__ring card__ring--cyan">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+                    </div>
+                    <h3>Custom websites</h3>
+                    <p>A website designed around <em>your</em> business — not a template with your name pasted in. Built to look sharp on every phone, tablet, and desktop, and to load fast.</p>
+                    <ul class="card__list">
+                        <li>Designed for your brand and customers</li>
+                        <li>Mobile-friendly on every screen</li>
+                        <li>Menus, maps, photos, online ordering links</li>
+                    </ul>
+                </article>
+                <article class="card reveal">
+                    <div class="card__ring card__ring--violet">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+                    </div>
+                    <h3>Hosting, handled</h3>
+                    <p>Your site stays online, secure, and fast — and you never think about servers, renewals, or certificates. If something needs attention, we've already seen it.</p>
+                    <ul class="card__list">
+                        <li>Reliable hosting, managed for you</li>
+                        <li>Security and backups included</li>
+                        <li>Your domain, set up and connected</li>
+                    </ul>
+                </article>
+                <article class="card reveal">
+                    <div class="card__ring card__ring--magenta">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg>
+                    </div>
+                    <h3>Ongoing updates</h3>
+                    <p>New menu? New hours? New photos? Send a text or an email and it's live — usually the same day. Your website keeps up with your business.</p>
+                    <ul class="card__list">
+                        <li>Content changes when you need them</li>
+                        <li>Seasonal promos and announcements</li>
+                        <li>No portals, no tickets — just ask</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section section--alt" id="process">
+        <div class="container">
+            <p class="eyebrow reveal">&lt;/&gt; How it works</p>
+            <h2 class="section__title reveal">From first call to live site,<br>in four simple steps.</h2>
+            <div class="steps">
+                <div class="step reveal">
+                    <div class="step__num">1</div>
+                    <div class="step__body">
+                        <h3>We talk</h3>
+                        <p>A quick, friendly conversation about your business, your customers, and what you want your website to do. No tech questions you can't answer — that's our job.</p>
+                    </div>
+                </div>
+                <div class="step reveal">
+                    <div class="step__num">2</div>
+                    <div class="step__body">
+                        <h3>We build</h3>
+                        <p>We design and build your site and show you previews along the way. You give feedback in plain English; we handle every technical detail.</p>
+                    </div>
+                </div>
+                <div class="step reveal">
+                    <div class="step__num">3</div>
+                    <div class="step__body">
+                        <h3>We launch</h3>
+                        <p>Once you love it, we take it live on your own domain — hosting, security, and setup all included. You don't lift a finger.</p>
+                    </div>
+                </div>
+                <div class="step reveal">
+                    <div class="step__num">4</div>
+                    <div class="step__body">
+                        <h3>We stay</h3>
+                        <p>This is where most web designers disappear. We don't. We host, monitor, and update your site for as long as you need us — one message away.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ WHY US ============ -->
+    <section class="section" id="why">
+        <div class="container">
+            <p class="eyebrow reveal">&lt;/&gt; Why Cone Media</p>
+            <h2 class="section__title reveal">Built for people who'd rather<br>run their business than a website.</h2>
+            <div class="why__grid">
+                <div class="why__item reveal">
+                    <h3>One person. Direct line.</h3>
+                    <p>No account managers, no support queues. You talk to the person who actually builds and maintains your site — every time.</p>
+                </div>
+                <div class="why__item reveal">
+                    <h3>Plain English, always.</h3>
+                    <p>We translate the technical stuff so you never have to learn it. If you can send a text message, you can work with us.</p>
+                </div>
+                <div class="why__item reveal">
+                    <h3>Fast when it matters.</h3>
+                    <p>Hours changed? Special event this weekend? Most updates go live the same day you ask for them.</p>
+                </div>
+                <div class="why__item reveal">
+                    <h3>It's yours.</h3>
+                    <p>Your domain, your content, your website. We're here because we're useful — not because you're locked in.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOUNDER ============ -->
+    <section class="section section--alt founder" id="founder">
+        <div class="container founder__grid">
+            <div class="founder__visual reveal" aria-label="Ethan Cohen, founder of Cone Media">
+                <div class="founder__backdrop"></div>
+                <img src="ethan.png" alt="Ethan Cohen" class="founder__photo">
+
+                <div class="founder__badge">
+                    <img src="logoNoWords.png" alt="" class="founder__badge-icon">
+                    <div>
+                        <strong>Ethan Cohen</strong>
+                        <span>Founder, Cone Media</span>
+                    </div>
+                </div>
+
+                <div class="chip founder__chip founder__chip--1"><span class="chip__dot chip__dot--cyan"></span>Full-stack developer</div>
+                <div class="chip founder__chip founder__chip--2"><span class="chip__dot chip__dot--magenta"></span>Same-day updates</div>
+
+                <div class="founder__msg">
+                    <div class="founder__msg-row founder__msg-row--client">
+                        <p>Hey Ethan — can you add our weekend specials before Friday?</p>
+                    </div>
+                    <div class="founder__msg-row founder__msg-row--ethan">
+                        <p>Done — it's live! Take a look. 🚀</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="founder__copy">
+                <p class="eyebrow reveal">&lt;/&gt; Meet the founder</p>
+                <h2 class="section__title reveal">When you work with Cone Media,<br>you work with Ethan.</h2>
+                <div class="reveal">
+                    <p class="founder__p">Cone Media is run by <strong>Ethan Cohen</strong>, a full-stack developer studying Informatics with a focus in UI/UX design at Barrett, The Honors College at Arizona State University. Outside of Cone Media, he builds data systems and internal web applications for organizations like the Maricopa County Department of Transportation and the Judicial Branch of Arizona — work where things have to be done right the first time.</p>
+                    <p class="founder__p">He started Cone Media because small businesses kept getting the same raw deal: overpriced templates, vanishing developers, and websites that never got updated. Every Cone Media site is designed, built, hosted, and maintained by Ethan personally — which is why updates happen in hours, not weeks.</p>
+                </div>
+                <div class="founder__facts reveal">
+                    <div class="founder__fact">
+                        <span class="founder__fact-label">Based in</span>
+                        <span class="founder__fact-value">Arizona</span>
+                    </div>
+                    <div class="founder__fact">
+                        <span class="founder__fact-label">Studies at</span>
+                        <span class="founder__fact-value">ASU &middot; Barrett Honors</span>
+                    </div>
+                    <div class="founder__fact">
+                        <span class="founder__fact-label">Builds with</span>
+                        <span class="founder__fact-value">React &middot; Node.js &middot; Shopify</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn--primary reveal">Talk to Ethan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+        <div class="container container--narrow">
+            <p class="eyebrow reveal">&lt;/&gt; Common questions</p>
+            <h2 class="section__title reveal">New to this? Perfect.<br>Most of our clients were too.</h2>
+            <div class="faq reveal">
+                <details class="faq__item">
+                    <summary>I've never had a website before. Where do I even start?</summary>
+                    <p>Right here. Fill out the form below or give us a call, and we'll walk you through everything — what a website can do for your business, what you'll need (usually just your logo, photos, and basic info), and what happens next. No preparation required.</p>
+                </details>
+                <details class="faq__item">
+                    <summary>Do I need to buy hosting or a domain myself?</summary>
+                    <p>Nope. We handle all of it — registering your domain if you don't have one, setting up hosting, and keeping everything renewed and secure. You'll never get a scary technical email you don't understand.</p>
+                </details>
+                <details class="faq__item">
+                    <summary>How long does it take to build a website?</summary>
+                    <p>Most small-business sites are ready within a couple of weeks, depending on how quickly we get your content (photos, menus, business details). We'll give you a clear timeline before we start.</p>
+                </details>
+                <details class="faq__item">
+                    <summary>What if I need changes after the site is live?</summary>
+                    <p>That's the whole point of working with us. Send an email or a text describing what you want changed, and we'll take care of it — usually the same day. No dashboards to learn, no extra software.</p>
+                </details>
+                <details class="faq__item">
+                    <summary>How much does it cost?</summary>
+                    <p>It depends on what your business needs — a single-page site is very different from a multi-page site with online ordering. Reach out and we'll give you a straightforward quote with no obligation and no pressure.</p>
+                </details>
+                <details class="faq__item">
+                    <summary>Will my website work on phones?</summary>
+                    <p>Absolutely — that's non-negotiable. Most of your customers will find you on their phone, so every site we build is designed mobile-first and tested across devices.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+        <div class="contact__glow" aria-hidden="true"></div>
+        <div class="container container--narrow">
+            <p class="eyebrow reveal">&lt;/&gt; Let's talk</p>
+            <h2 class="section__title reveal">Tell us about your business.<br>We'll handle the rest.</h2>
+            <p class="contact__sub reveal">Fill this out and we'll get back to you within 24 hours. Prefer to talk? Call <a href="tel:+15208709894">(520) 870-9894</a>.</p>
+
+            <form id="contact-form" class="form reveal">
+                <div class="form__row">
+                    <div class="form__group">
+                        <label for="first-name">First name *</label>
+                        <input type="text" id="first-name" name="firstName" autocomplete="given-name" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="last-name">Last name *</label>
+                        <input type="text" id="last-name" name="lastName" autocomplete="family-name" required>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <label for="company-name">Business name</label>
+                    <input type="text" id="company-name" name="companyName" autocomplete="organization">
+                </div>
+                <div class="form__row">
+                    <div class="form__group">
+                        <label for="contact-email">Email *</label>
+                        <input type="email" id="contact-email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="contact-phone">Phone</label>
+                        <input type="tel" id="contact-phone" name="phone" autocomplete="tel">
+                    </div>
+                </div>
+                <div class="form__group">
+                    <label for="contact-message">What are you looking for? *</label>
+                    <textarea id="contact-message" name="message" rows="6" placeholder="Tell us a little about your business and what you'd like your website to do. No technical details needed!" required></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full" id="contact-submit">
+                    <span id="contact-button-text">Send message</span>
+                    <span class="spinner hidden" id="contact-spinner" aria-hidden="true"></span>
+                </button>
+                <div id="contact-status" class="form__status hidden" role="status"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a href="#top" class="nav__brand">
+                <img src="logoNoWords.png" alt="Cone Media" class="nav__icon">
+                <span class="nav__wordmark"><span class="wm-white">Cone</span>&nbsp;<span class="wm-gradient">Media</span></span>
+            </a>
+            <p class="footer__tagline">Websites &bull; Hosting &bull; Ongoing Updates</p>
+            <p class="footer__meta">&copy; <span id="year"></span> Cone Media &middot; <a href="tel:+15208709894">(520) 870-9894</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
